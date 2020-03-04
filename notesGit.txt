@@ -22,3 +22,12 @@ git branch "nomBranche" : permet de créer une nouvelle branche
 git checkout "nomBranche": permet de se positionner sur cette nouvelle branche
 git checkout -b ma-branche : permet de fusionner la création d'une branche et se positionner dans la branche
 git merge "nomBrancheàRecuperer": si on est dans master, et qu'on merge avec une brance annexe, on met le nom de la branche annexe, les modifications de la branche annexe seront alors importées dans master.
+
+#####################################################   GESTION DES CONFLITS   ##############################################################
+
+lorsque l'on créait une branch et que l'on travaille sur un fichier, il arrive que quelqu'un travaille sur ce fichier en même temps dans le master. Dans ce cas, lorsque l'on fait un merge
+on a un conflit. Pour résoudre le conflit, on a git qui highlight les parties modifiées en conflit, il faut alors choisir ce que l'on veut garder. 
+ensuite 
+git commit : sans autre commentaire, cela signifiera que l'on a résolut le conflit et que l'on veut merger les documents, une sauvegarde suffit
+on peut ajouter un commentaire au moment de notre commit pour ne pas avoir le message type (mais seulement après avoir mis git commit)
+
