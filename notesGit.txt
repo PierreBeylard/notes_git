@@ -1,3 +1,5 @@
+# les commandes git
+
 touch monFichier.extension : pour créer un fichier 
 mkdir "nomDossier" : pour créer un dossier
 git init : pour activer un  dossier comme repository sur git, il faut l'initialiser en se placant dans le dossier avant de taper la commande
@@ -30,4 +32,7 @@ on a un conflit. Pour résoudre le conflit, on a git qui highlight les parties m
 ensuite 
 git commit : sans autre commentaire, cela signifiera que l'on a résolut le conflit et que l'on veut merger les documents, une sauvegarde suffit
 on peut ajouter un commentaire au moment de notre commit pour ne pas avoir le message type (mais seulement après avoir mis git commit)
+
+git blame "nomfichier.extension": permet de voir la liste de toutes les modifications éffectuées dans un fichier ainsi que le début des SHA associés 
+git show "SHA" : le sha trouvé dans la commande git blame --> cela donne plus d'information sur ce qu'il s'est passé durant ce commit 
 
