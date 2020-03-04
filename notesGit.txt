@@ -17,3 +17,7 @@ git reset --hard : permet d'annuler les modifications en cours qui n'ont pas ét
 git clone : clonner un repository sur son git hub
 git push origin master origin est le nom par défaut donné au remote github (remote correspond à une sauvegarde sur une machine à distance). push permet d'envoyer les donnée. master est le nom de la branche sur laquelle on veut pousser les données 
 git pull origin master: permet de récuperer depuis un remote la dernière version d'un code. pratique lorsque l'on a travaillé à plusieurs sur un code. la personne fait les modifications, les commits, les push sur le remote. de la, on les récupére avec un pull
+git branch : donne les différentes branch du code. la principale est la master
+git branch "nomBranche" : permet de créer une nouvelle branche 
+git checkout "nomBranche": permet de se positionner sur cette nouvelle branche
+git checkout -b ma-branche : permet de fusionner la création d'une branche et se positionner dans la branche
