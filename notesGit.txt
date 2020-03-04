@@ -1,0 +1,18 @@
+touch monFichier.extension : pour créer un fichier 
+pour créer un dossier la commande est : mkdir nomDossier
+pour activer un  dossier comme repository sur git, il faut l'initialiser en se placant dans le dossier et en tapant la commande : git init
+pour ajouter un fichier à l'index : git add nomFichier.extension 
+pour commiter un fichier : git commit nomfichier.extension "commentaires sur la modification créée"
+pour voir le status du repository : git status 
+pour suivre les changements et les commit, on peut utiliser les logs : git log
+astuce pour ne pas avoir à faire git add puis git commit, on peut faire la commande suivante : git -a -m "commentaires" cela est possible que si le fichier a initialement été ajouté à l'index
+
+SHA : idendifiant unique de chaque version des fichiers 
+
+git checkout "codeSHA" : permet de se positionner sur la version du fichier identifée par le SHA 
+git checkout master : permet de revenir à la version la plus récente du fichier
+git revert "codeSHA" : commit créer un nouveau commit qui fait l'inverse du précédent
+git commit --amend -m "nouveau message" : permet de remplacer le message du dernier commit. Mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
+git reset --hard : permet d'annuler les modifications en cours qui n'ont pas été commitées
+git clone : clonner un repository sur son git hub
+git push origin master origin est le nom par défaut donné au remote github (remote correspond à une sauvegarde sur une machine à distance). push permet d'envoyer les donnée. master est le nom de la branche sur laquelle on veut pousser les données 
