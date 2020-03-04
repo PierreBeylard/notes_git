@@ -1,11 +1,11 @@
 touch monFichier.extension : pour créer un fichier 
-pour créer un dossier la commande est : mkdir nomDossier
-pour activer un  dossier comme repository sur git, il faut l'initialiser en se placant dans le dossier et en tapant la commande : git init
-pour ajouter un fichier à l'index : git add nomFichier.extension 
-pour commiter un fichier : git commit nomfichier.extension "commentaires sur la modification créée"
-pour voir le status du repository : git status 
-pour suivre les changements et les commit, on peut utiliser les logs : git log
-astuce pour ne pas avoir à faire git add puis git commit, on peut faire la commande suivante : git -a -m "commentaires" cela est possible que si le fichier a initialement été ajouté à l'index
+mkdir "nomDossier" : pour créer un dossier
+git init : pour activer un  dossier comme repository sur git, il faut l'initialiser en se placant dans le dossier avant de taper la commande
+git add nomFichier.extension : pour ajouter un fichier à l'index  
+git commit nomfichier.extension "commentaires sur la modification créée" : pour commiter les fichiers indexés du repository
+git status : pour voir le status du repository  
+git log : pour suivre les changements et les commit, on peut utiliser les logs
+astuce : pour ne pas avoir à faire git add puis git commit, on peut faire la commande suivante : git -a -m "commentaires" cela est possible que si le fichier a initialement été ajouté à l'index
 
 SHA : idendifiant unique de chaque version des fichiers 
 
