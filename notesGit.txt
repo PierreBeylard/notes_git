@@ -66,3 +66,13 @@ git stash pop: reprendre vos modifications avec la mise à jour du reste du code
 
 SI on le fait depuis une branche, les modifications réalisées dans la branche principale ne sont pas prises en compte, elles le seront au moment du merge. 	
 le stash est perdu une fois que l'on fait un pop. si on veut remettre de coté, il faut refaire un stash
+
+Si vous voulez garder les modifications dans votre stash, vous pouvez utiliser apply à la place de pop :
+git stash apply
+
+##################################################  FORK - CONTRIBUER AUX PROJETS OPENSOURCES #############################################################
+
+si on est sur git hub et que l'on souhaite travailler sur un projet open source, il faut forker le projet. Fork signifie : prend ce repository et fais en une copie à moi
+fork prend le projet et le copie sur notre git hub. Si on le veut sur sa machine, il faut alors le cloner
+TOUJOURS LIRE DANS LE README OU AILLEURS LE PROCESS DE CONTRIBUTION DU PROJET
+
