@@ -50,3 +50,19 @@ Le plus crucial est de ne JAMAIS versionner une variable de configuration, que c
 
 git ignore : on créait ce fichier dans le repository. dans ce fichier, on ajoute les noms des fichiers que l'on veut que git ignore. Ainsi, lorsque l'on commit, git ne prendra pas en compte ces fichiers.
 
+Le fichier .gitignore doit être tracké comme vos autres fichiers dans Git : vous devez donc l'ajouter à l'index et le committer. 
+
+
+#####################################################   GIT STASH ###########################################################
+
+Son travaille sur une fonction, mais qu'on est interrompu au milieu, si vous faites un commit des modifications sur votre fonction à ce stade, cela va alourdir votre historique car vous n'avez pas terminé votre tâche.
+
+Comment faire pour ne pas perdre vos modifications en cours avant de passer à l'urgence à traiter ?
+
+Et bien vous pouvez mettre de côté vos modifications en cours avec la commande :
+
+git stash: mets vos modifications de coté, la branche principale n'est pas polluée. 
+git stash pop: reprendre vos modifications avec la mise à jour du reste du code liées aux potentielels modifications réalisées. 
+
+SI on le fait depuis une branche, les modifications réalisées dans la branche principale ne sont pas prises en compte, elles le seront au moment du merge. 	
+le stash est perdu une fois que l'on fait un pop. si on veut remettre de coté, il faut refaire un stash
