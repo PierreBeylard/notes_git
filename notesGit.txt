@@ -36,3 +36,17 @@ on peut ajouter un commentaire au moment de notre commit pour ne pas avoir le me
 git blame "nomfichier.extension": permet de voir la liste de toutes les modifications éffectuées dans un fichier ainsi que le début des SHA associés 
 git show "SHA" : le sha trouvé dans la commande git blame --> cela donne plus d'information sur ce qu'il s'est passé durant ce commit 
 
+####################################################   SECURITE ET FICHIERS A IGNORER #########################################################
+
+Pour des raisons de sécurité et de clarté, il est important d'ignorer certains fichiers dans Git, tels que :
+
+Tous les fichiers de configuration (config.xml, databases.yml, .env...)
+
+Les fichiers et dossiers temporaires (tmp, temp/...)
+
+Les fichiers inutiles comme ceux créés par votre IDE ou votre OS (.DS_Store, .project...)
+
+Le plus crucial est de ne JAMAIS versionner une variable de configuration, que ce soit un mot de passe, une clé secrète ou quoi que ce soit de ce type. Versionner une telle variable conduirait à une large faille de sécurité, surtout si vous mettez votre code en ligne sur GitHub !
+
+git ignore : on créait ce fichier dans le repository. dans ce fichier, on ajoute les noms des fichiers que l'on veut que git ignore. Ainsi, lorsque l'on commit, git ne prendra pas en compte ces fichiers.
+
