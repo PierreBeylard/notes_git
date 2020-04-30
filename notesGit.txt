@@ -25,6 +25,7 @@ git checkout "nomBranche": permet de se positionner sur cette nouvelle branche
 git checkout -b ma-branche : permet de fusionner la création d'une branche et se positionner dans la branche
 git merge "nomBrancheàRecuperer": si on est dans master, et qu'on merge avec une brance annexe, on met le nom de la branche annexe, les modifications de la branche annexe seront alors importées dans master.
 git branch -d ma-branche : permet de supprimer une branche
+fichier sensible ajouté par erreur  à git -supprimer de l'historique :https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
 
 
 #####################################################   GESTION DES CONFLITS   ##############################################################
